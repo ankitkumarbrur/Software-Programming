@@ -8,7 +8,7 @@ PSTAR \*+
 NONSTARFWD [^*/]
 
 %%
-\"(\\.|[^"\\])*\" ;
+\"((\\\")|[^"])*\" ;
 
 "/*"{KNONSTAR}{PSTAR}({NONSTARFWD}{KNONSTAR}{PSTAR})*"/" {
     multiLineCmt++;
